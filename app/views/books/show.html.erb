@@ -1,0 +1,24 @@
+<div>
+  <%= flash[:notice] %>
+<div>
+
+<div>
+<strong>本のタイトル:</strong>
+<%= @book.title %>
+</div>
+
+<br>
+
+<div>
+<strong>感想:</strong>
+<%= @book.body %>
+</div>
+
+<br>
+
+<%= link_to "Edit", edit_book_path(@book) %>
+|
+<%= link_to "Back", "/books" %>
+
+
+
